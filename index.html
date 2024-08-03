@@ -35,9 +35,15 @@
             align-items: center;
         }
         section img {
-            width: 50px;
-            height: 50px;
+            max-width: 100px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
             margin-right: 20px;
+            border-radius: 5px; /* optional, for rounded corners */
+        }
+        section div {
+            flex: 1;
         }
         section h2 {
             font-size: 1.5em;
