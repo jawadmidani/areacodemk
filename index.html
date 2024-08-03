@@ -9,26 +9,62 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
         header {
-            position: absolute;
-            top: 20px;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
             font-size: 2em;
             font-weight: bold;
         }
-        main {
+        section {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
             font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        section p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        section a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>Area Code MK</header>
-    <main>Work In Progress</main>
+    <section id="qxradio">
+        <h2>QXRadio</h2>
+        <p>QXRadio is a premier online radio station bringing you the latest hits and classic tunes. Tune in to enjoy a wide variety of music genres and stay updated with the latest in entertainment.</p>
+        <a href="https://qxradio.mk" target="_blank">Visit QXRadio</a>
+    </section>
+    <section id="windofchange">
+        <h2>WindofChange</h2>
+        <p>WindofChange is dedicated to promoting positive changes in our communities through impactful initiatives and programs. Join us in making a difference and supporting various causes.</p>
+        <a href="https://windofchange.life" target="_blank">Visit WindofChange</a>
+    </section>
 </body>
 </html>
