@@ -17,8 +17,10 @@
         }
         header {
             width: 100%;
-            text-align: center;
-            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
             background-color: #333;
             color: white;
         }
@@ -34,20 +36,20 @@
             font-size: 1.2em;
         }
         nav {
-            margin: 20px 0;
+            margin-left: auto;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
-            color: #007BFF;
+            color: white;
             font-size: 1em;
             padding: 10px 20px;
-            border: 2px solid #007BFF;
+            background-color: #007BFF;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #007BFF;
-            color: white;
+            background-color: #0056b3;
         }
         .main-section {
             width: 80%;
@@ -97,12 +99,27 @@
             font-size: 1em;
             margin-bottom: 20px;
         }
+        .sponsor-section a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .sponsor-section a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Area Code MK</h1>
-        <p>Local Rag MK</p>
+        <div>
+            <h1>Area Code MK</h1>
+            <p>Local Rag MK</p>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="sponsors.html">Our Sponsors</a>
@@ -117,6 +134,7 @@
         <div>
             <h2>Printogo</h2>
             <p>Printogo is a local print shop located at 11 Melrose Avenue, Bletchley, MK3 6PB. They offer a wide range of printing services. Visit them for all your printing needs.</p>
+            <a href="https://linktr.ee/printogo" target="_blank">Visit Printogo</a>
         </div>
     </section>
 </body>
