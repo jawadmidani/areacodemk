@@ -17,12 +17,11 @@
         }
         header {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
+            text-align: center;
+            padding: 20px 0;
             background-color: #333;
             color: white;
+            position: relative;
         }
         header h1 {
             font-size: 2em;
@@ -36,7 +35,10 @@
             font-size: 1.2em;
         }
         nav {
-            margin-left: auto;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
         }
         nav a {
             margin: 0 10px;
@@ -51,7 +53,7 @@
         nav a:hover {
             background-color: #0056b3;
         }
-        .main-section {
+        .main-section, .sponsor-section {
             width: 80%;
             max-width: 800px;
             margin: 20px 0;
@@ -59,24 +61,20 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
-        .main-section h2 {
+        .main-section h2, .sponsor-section h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .main-section p {
+        .main-section p, .sponsor-section p {
             font-size: 1em;
             margin-bottom: 20px;
         }
         .sponsor-section {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
         }
@@ -91,14 +89,6 @@
         .sponsor-section div {
             flex: 1;
         }
-        .sponsor-section h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .sponsor-section p {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
         .sponsor-section a {
             display: inline-block;
             padding: 10px 20px;
@@ -112,14 +102,23 @@
         .sponsor-section a:hover {
             background-color: #0056b3;
         }
+        @media (max-width: 600px) {
+            nav {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Area Code MK</h1>
-            <p>Local Rag MK</p>
-        </div>
+        <h1>Area Code MK</h1>
+        <p>Local Rag MK</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="sponsors.html">Our Sponsors</a>
