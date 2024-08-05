@@ -53,7 +53,7 @@
         nav a:hover {
             background-color: #0056b3;
         }
-        .main-section, .sponsor-section {
+        .main-section {
             width: 80%;
             max-width: 800px;
             margin: 20px 0;
@@ -61,20 +61,24 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
         }
-        .main-section h2, .sponsor-section h2 {
+        .main-section h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .main-section p, .sponsor-section p {
+        .main-section p {
             font-size: 1em;
             margin-bottom: 20px;
         }
         .sponsor-section {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
         }
@@ -88,6 +92,14 @@
         }
         .sponsor-section div {
             flex: 1;
+        }
+        .sponsor-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .sponsor-section p {
+            font-size: 1em;
+            margin-bottom: 20px;
         }
         .sponsor-section a {
             display: inline-block;
@@ -111,6 +123,16 @@
             nav a {
                 display: block;
                 margin: 5px 0;
+            }
+            .sponsor-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sponsor-section img {
+                margin-bottom: 10px;
+            }
+            .sponsor-section div {
+                text-align: center;
             }
         }
     </style>
